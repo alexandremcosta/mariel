@@ -5,6 +5,18 @@ body {
   font-family: 'Cormorant Garamond', serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #555;
+}
+
+img {
+  box-shadow: 6px 6px 20px #888;
+}
+
+a {
+  color: rgb(181, 147, 98);
+}
+
 .sans-serif {
   font-family: 'Raleway', sans-serif;
 }

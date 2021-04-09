@@ -8,18 +8,18 @@
     </p>
   </article>
   <article class="column">
-    <h2>Design de Interiores</h2>
-    <p class="hover-color">
-      <a href="https://www.instagram.com/p/CKjAkV9jSHf/" target="_blank">
-        <img src="<%= Routes.static_path(@conn, "/images/droffice.png") %>" alt="Backyard"/>
-      </a>
-    </p>
-  </article>
-  <article class="column">
     <h2>Arquitetônicos</h2>
     <p class="hover-color">
       <a href="https://www.instagram.com/p/CJEhjjrjhoo/" target="_blank">
         <img src="<%= Routes.static_path(@conn, "/images/front-house.jpeg") %>" alt="Backyard"/>
+      </a>
+    </p>
+  </article>
+  <article class="column">
+    <h2>Design de Interiores</h2>
+    <p class="hover-color">
+      <a href="https://www.instagram.com/p/CKjAkV9jSHf/" target="_blank">
+        <img src="<%= Routes.static_path(@conn, "/images/droffice.png") %>" alt="Backyard"/>
       </a>
     </p>
   </article>
