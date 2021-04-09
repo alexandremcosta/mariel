@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mariel Nunes Arquitetura</title>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Raleway&display=swap" rel="stylesheet">
+    <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+  </head>
+  <body>
+    <header>
+      <section class="container">
+        <nav role="navigation">
+          <h3>Fala comigo</h3>
+          <ul class="sans-serif">
+            <li>
+              <a href="https://instagram.com/marielnunesarq">Instagram</a>
+            </li>
+            <li>
+              <a href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5586999147779%26text%3DOieh%2521%2B%25F0%259F%2599%258B%25F0%259F%258F%25BB%25E2%2580%258D%25E2%2599%2580%25EF%25B8%258F%2BSomos%2Bo%2BEscrit%25C3%25B3rio%2BMariel%2BNunes%2BArquitetura%252C%2Bme%2Bconta%2Bsobre%2Bo%2Bseu%2Bprojeto%253F%2521%2B%25F0%259F%2598%258A&e=ATNvT-v1XnpGZ4DLy_eIYzJoDSEjcidFwLz37t3PkKHaI7TQwLyflumQbg6PbQZUiNlp2KrM20QBheEBhFxT9t0seU-QZk6oMaTabA&s=1">WhatsApp</a>
+            </li>
+            <li>
+              <a href="mailto:marielnunes.arq@gmail.com">Gmail</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="https://phoenixframework.org/" class="phx-logo">
+          <img src="<%= Routes.static_path(@conn, "/images/photo01.png") %>" alt="Photo of Logo"/>
+        </a>
+      </section>
+    </header>
+    <main role="main" class="container">
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <%= @inner_content %>
+    </main>
+  </body>
+</html>
